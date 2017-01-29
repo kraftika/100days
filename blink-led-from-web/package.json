@@ -1,0 +1,15 @@
+{
+  "name": "blink-from-web",
+  "version": "1.0.0",
+  "description": "Blink a LED with Arduino and johnny-five",
+  "main": "index.js",
+  "repository": {},
+  "author": "Ionut Pistol",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "johnny-five": "^0.10.6",
+    "socket-io": "^1.0.0"
+  }
+}

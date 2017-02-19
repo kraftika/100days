@@ -15,10 +15,14 @@ app.get('/', function(req, res) {
 
 io.on('connection', function(client) {
     client.on('join', function(handshake) {
-        console.log(handshake);
+        console.log('Handshake: ' + handshake);
+    });
+
+    client.on('state', function(data) {
+        console.log('I received: ' + data.state);
     });
 });
 
 const port = process.env.PORT || 5000;
 server.listen(port);
-console.log('Server listenning on http://localhost:${port}');
+console.log('Server listenning');
